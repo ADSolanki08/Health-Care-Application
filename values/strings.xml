@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">HEALTH CARE +</string>
+    <string name="wel">WELCOME TO HEALTH CARE +</string>
+    <string name="title">HEALTH CARE +</string>
+    <string name="created">DEVELOPED BY</string>
+    <string name="name">ADITYA AND DHRUMIL</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

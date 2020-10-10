@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/Main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/Q1"
+            style="@android:style/Widget.Holo.Light.TextView.SpinnerItem"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:background="#AF31C5"
+            android:layout_marginLeft="5dp"
+            android:text="Which of the following symptoms are you suffering through?"
+            android:textColor="@color/colorPrimaryLight"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="17dp" />
+
+        <CheckBox
+            android:id="@+id/fevCh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fever"
+            android:textColor="#101010"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            tools:layout_editor_absoluteY="73dp" />
+
+        <CheckBox
+            android:id="@+id/CoughCh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cough"
+            android:textColor="#101010"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/fevCh"
+            app:layout_constraintTop_toBottomOf="@+id/fevCh" />
+
+        <CheckBox
+            android:id="@+id/WeekCh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weakness"
+            android:textColor="#101010"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/CoughCh"
+            app:layout_constraintTop_toBottomOf="@+id/CoughCh" />
+
+        <CheckBox
+            android:id="@+id/PlaCh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Platelet Down"
+            android:textColor="#101010"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/WeekCh"
+            app:layout_constraintTop_toBottomOf="@+id/WeekCh" />
+
+        <CheckBox
+            android:id="@+id/bjPainCh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Body Joint Pain"
+            android:textColor="#101010"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/PlaCh"
+            app:layout_constraintTop_toBottomOf="@+id/PlaCh" />
+
+        <CheckBox
+            android:id="@+id/headCh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Headache "
+            android:textColor="#101010"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/bjPainCh"
+            app:layout_constraintTop_toBottomOf="@+id/bjPainCh" />
+
+        <CheckBox
+            android:id="@+id/DiaCh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diarrhoea"
+            android:textColor="#101010"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/headCh"
+            app:layout_constraintTop_toBottomOf="@+id/headCh" />
+
+        <CheckBox
+            android:id="@+id/VomCh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vomiting"
+            android:textColor="#101010"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/DiaCh"
+            app:layout_constraintTop_toBottomOf="@+id/DiaCh" />
+
+
+        <CheckBox
+            android:id="@+id/LBPCh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Low Blood pressure"
+            android:textColor="#101010"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/VomCh"
+            app:layout_constraintTop_toBottomOf="@+id/VomCh" />
+
+        <CheckBox
+            android:id="@+id/RestCh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restlessness"
+            android:textColor="#101010"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/LBPCh"
+            app:layout_constraintTop_toBottomOf="@+id/LBPCh" />
+
+        <CheckBox
+            android:id="@+id/CheCh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chest Pain"
+            android:textColor="#101010"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/RestCh"
+            app:layout_constraintTop_toBottomOf="@+id/RestCh" />
+
+        <CheckBox
+            android:id="@+id/StomCh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stomach Pain"
+            android:textColor="#101010"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/CheCh"
+            app:layout_constraintTop_toBottomOf="@+id/CheCh" />
+
+        <CheckBox
+            android:id="@+id/NoSnTCh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No taste and No smell"
+            android:textColor="#101010"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/StomCh"
+            app:layout_constraintTop_toBottomOf="@+id/StomCh" />
+
+        <CheckBox
+            android:id="@+id/BreCh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Difficulty in Breathing"
+            android:textColor="#101010"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/MusCh"
+            app:layout_constraintTop_toBottomOf="@+id/MusCh" />
+
+        <CheckBox
+            android:id="@+id/MusCh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Muscle Pain"
+            android:textColor="#101010"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/NoSnTCh"
+            app:layout_constraintTop_toBottomOf="@+id/NoSnTCh" />
+
+
+            <CheckBox
+                android:id="@+id/ThaCh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thirst"
+                android:textColor="#101010"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/BreCh"
+                app:layout_constraintTop_toBottomOf="@+id/BreCh" />
+
+            <Button
+                android:id="@+id/NxtBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="5dp"
+                android:background="#00E676"
+                android:text="Next"
+                android:textSize="20sp" />
+
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/DisPer"
+                    style="@android:style/Widget.Holo.Light.TextView.SpinnerItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="#FFEA00"
+                    android:text="Percentage Ratio Of Possible Disease"
+                    android:textColor="@color/colorPrimaryLight"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="17dp" />
+
+                <LinearLayout
+                    android:id="@+id/covid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/covidPer"
+                        style="@android:style/Widget.Holo.Light.TextView.SpinnerItem"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="#FF1744"
+                        android:text="Covid19"
+                        android:textColor="@color/colorPrimaryLight"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:visibility="visible"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:layout_editor_absoluteY="17dp" />
+
+                    <TextView
+                        android:id="@+id/CoPer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#00B0FF"
+                        android:text="100%"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/malaria"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/MalariaPer"
+                        style="@android:style/Widget.Holo.Light.TextView.SpinnerItem"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="#FF1744"
+                        android:text="Malaria"
+                        android:textColor="@color/colorPrimaryLight"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:visibility="visible"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:layout_editor_absoluteY="17dp" />
+
+                    <TextView
+                        android:id="@+id/Mal_Par"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#00B0FF"
+                        android:text="Hel"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/typhoid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/TyPer"
+                        style="@android:style/Widget.Holo.Light.TextView.SpinnerItem"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="#FF1744"
+                        android:text="Typhoid"
+                        android:textColor="@color/colorPrimaryLight"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:visibility="visible"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:layout_editor_absoluteY="17dp" />
+
+                    <TextView
+                        android:id="@+id/Ty_Per"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#00B0FF"
+                        android:text="100%"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/cholera"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/ChoPer"
+                        style="@android:style/Widget.Holo.Light.TextView.SpinnerItem"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="#FF1744"
+                        android:text="Cholera"
+                        android:textColor="@color/colorPrimaryLight"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:visibility="visible"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:layout_editor_absoluteY="17dp" />
+
+                    <TextView
+                        android:id="@+id/Cho_Per"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#00B0FF"
+                        android:text="100%"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dengue"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/DenTxt"
+                        style="@android:style/Widget.Holo.Light.TextView.SpinnerItem"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="#FF1744"
+                        android:text="Dengue"
+                        android:textColor="@color/colorPrimaryLight"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:visibility="visible"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:layout_editor_absoluteY="17dp" />
+
+
+                    <TextView
+                        android:id="@+id/Den_Per"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#00B0FF"
+                        android:text="100%"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/chikunguniya"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/ChiTxt"
+                        style="@android:style/Widget.Holo.Light.TextView.SpinnerItem"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="#FF1744"
+                        android:text="Chikunguniya Virus"
+                        android:textColor="@color/colorPrimaryLight"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:visibility="visible"
+
+                        tools:layout_editor_absoluteY="17dp" />
+
+                    <TextView
+                        android:id="@+id/Chi_Per"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#00B0FF"
+                        android:text="100%"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
