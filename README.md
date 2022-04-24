@@ -19,7 +19,7 @@ This App also suggest home remedies for the disease to that patient
 
 ### Built With
 - [Android Studio](https://developer.android.com/guide)
-- [Java](https://www.java.com/) For bakend implementation.
+- [Java](https://www.java.com/) For backend implementation.
 - [XML](https://developer.android.com/reference/android/util/Xml) For frontend layouts designing.
 - [Fierbase](https://firebase.google.com/) For database
 
