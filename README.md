@@ -25,4 +25,4 @@ This App also suggest home remedies for the disease to that patient
 
 ## Contact
 
-- [@ADSolanki8602](https://github.com/ADSolanki8602)
+- [@ADSolanki08](https://github.com/19IT137)
